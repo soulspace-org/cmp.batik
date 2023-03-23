@@ -3,4 +3,4 @@
                                             :exclusions [[com.sun.media/jai-codec] [javax.media/jai-codec] [javax.media/jai-core]]}
         org.apache.xmlgraphics/batik-svggen {:mvn/version "1.16"
                                              :exclusions [[com.sun.media/jai-codec] [javax.media/jai-codec] [javax.media/jai-core]]}
-        org.soulspace.clj/clj.java {:mvn/version "0.8.0"}}}
+        org.soulspace.clj/clj.java {:mvn/version "0.9.0"}}}
