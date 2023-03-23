@@ -9,9 +9,9 @@
 ;
 (ns org.soulspace.clj.xml.svgtest
 ;  (:refer-clojure :exclude [filter set symbol use])
-  (:require [org.soulspace.cmp.svg.svg-dsl :as svg])
-  (:use [clojure.data.xml]
-        [org.soulspace.cmp.svg graphics2d]))
+  (:require [org.soulspace.cmp.svg.svg-dsl :as svg]
+            [org.soulspace.cmp.svg.graphics2d :as sg2d]
+            [clojure.data.xml :as xml]))
 
 (defn svg-circles
   []
@@ -43,4 +43,4 @@
            (svg/text {:x "60" :y "125" :style "fill: white; stroke: black; font-family: sans-serif; font-size: 25; font-weight: bold"} "Graphics"))))
 
 (defn svg-str [f]
-  (println (emit-str (f))))
+  (println (xml/emit-str (f))))
